@@ -1,0 +1,161 @@
+
+body {
+    background-color: #2daabe;
+}
+
+.App-logo {
+  /*  animation: App-logo-spin  20s linear;*/
+    height: 50px;
+}
+
+.header{
+    lost-utility: clearfix;
+}
+
+.App-header {
+    color: white;
+    lost-column: 1/3;
+    lost-move: 1/10;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+main {
+    lost-center: 1050px;
+    margin-top: 50px;
+}
+
+.header{
+    margin-bottom: 10px;
+}
+
+.header-navigation {
+    text-align: right;
+    lost-column: 2/3;
+    color: #e5fafd;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 34px;
+}
+
+.header-navigation a {
+    color: #e5fafd;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.header-navigation a:last-child {
+    padding-right:45px ;
+}
+
+.left-menu{
+    lost-utility: clearfix;
+}
+
+.left-menu-panel {
+    lost-column: 1/9;
+    margin-right: 0 !important;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.left-menu-panel li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    max-width: 70px;
+    border-bottom: 1px solid #15b3cc;
+    border-top: 1px solid #1fa5bb;
+}
+
+.left-menu-panel li:first-child{
+   border-top: none;
+}
+
+.left-menu-panel img{
+    width: 60px;
+}
+
+.left-menu-panel label{
+    font-size: 11px;
+    display: block;
+    color: #88d6e3;
+}
+
+.main-panel {
+    lost-column: 8/9;
+    background: #fff;
+    box-shadow: 5px 6px 5px rgba(0,0,0,.2);
+    max-height: 450px;
+    border-radius: 2px;
+}
+
+.main-panel img {
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+.footer{
+    text-align: center;
+    lost-utility: clearfix;
+    padding-top: 50px;
+    color: #88d6e3;
+    text-shadow: 1px 1px 1px #7b7878, 1px 1px 2px #1c7c8c;
+    font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+    main {
+        margin-top: 10px;
+    }
+
+    .header-navigation,.App-header {
+        lost-column: 1/1;
+        text-align: center;
+    }
+
+    .App-header {
+        position: inherit;
+    }
+
+    .main-panel {
+        lost-row: 1/1;
+    }
+    .left-menu-panel {
+        lost-column: 1/1;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+       margin-bottom: 10px;
+    }
+    .left-menu-panel li{
+      display: inline-block;
+        font-size: 8px!important;
+        padding:0 10px;
+        border: none;
+    }
+    .left-menu-panel img{
+        width: 50px;
+    }
+
+    .main-panel img{
+        width: 100%;
+        max-height: 400px;
+    }
+
+    .footer{
+        display: none;
+    }
+}
